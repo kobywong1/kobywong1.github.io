@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>FRED Group Project - Koby Wong</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+						<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<span class="icon solid major fa-cloud"></span>
+					<h1>Hi, my name is <strong>Wong Jing Hei (Koby)</strong>, <br />
+					and this is my Portfolio</a>.</h1>
+			</section>
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+						<section class="main style1 special">
+							<div class="container">
+								<header class="major">
+									<h2>Group Project: ARIMA and VAR</h2>
+								</header>
+									<p>Group project. Multivariate time series analysis of US Unemployment and CPI Growth Rate data found on FRED using R.</p>
+								</header>
+								<body>
+									<embed src="economy.pdf" type="application/pdf" width="100%" height="800px"/>
+								</body>
+							</section>
+							<section class="main1 style1">
+								<div class="container">
+								<p> Data for this project is sourced from the Federal Reserve of Economic Data (FRED) (Available at: <a href="https://fred.stlouisfed.org/series/CPALTT01USM657N">https://fred.stlouisfed.org/series/CPALTT01USM657N</a> and <a href="https://fred.stlouisfed.org/series/UNRATENSA">https://fred.stlouisfed.org/series/UNRATENSA</a>). Advanced Multivariate Time Series analysis is conducted on US unemployment and CPI growth rates from 1960 to 2020 first through fitting an ARIMA on each respective time series data before fitting a multivariate Vector Autoregressive Model on both variables. Diagnostic tests of Ljung Box tests, CUSUM plots, and Impulse Response Functions were used to ensure the validity of the results, complemented by a series of backtests on the ARIMA model. Results conclude that the massive outliers created by COVID 19 causes unemployment forecasts to be fundamentally useless, though forecasts for CPI seem more realistic. Interestingly, the VAR model seems to predict that based on our current data, the CPI growth rate seems to Granger cause the unemployment rates, though the unemployment rates seem to have no as strong of a reverse causal effect on CPI growth rates. <br/><br/>
+									This project was conducted using R, and is a collaborative coding project with my peers at UCLA. The project taught me advanced time series analysis techniques that could be easily translated to future time series projects I have in the future. 
+								</p>
+							</section>
+
+					</div>
+
+
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<form method="post" action="#">
+					<ul class="actions special">
+						<li><a href="index.html" class="button scrolly">Return to Home Page</a></li>
+					</ul>
+				</form>
+			</section>
+		</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
